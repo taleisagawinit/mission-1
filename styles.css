@@ -2,14 +2,15 @@
     display: flex;
     justify-content: space-between;
     padding-top: 12px;
+    flex-wrap: wrap;
     
 }
 
 .octocat {
     border: 2px solid rgb(215,215,215);
     margin: auto;
-    width: 450px;
-    height: 450px;
+    width: 200px;
+    height: 200px;
     border-radius: 3px;
 }
 
