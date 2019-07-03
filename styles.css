@@ -3,73 +3,92 @@
     justify-content: space-between;
     padding-top: 12px;
     flex-wrap: wrap;
-    
-}
 
-.octocat {
-    border: 2px solid rgb(215,215,215);
+ }
+
+ .octocat {
     margin: auto;
-    width: 200px;
-    height: 200px;
+    width: 400px;
     border-radius: 3px;
+ 
 }
 
-.image-footer {
+
+ .image-footer {
     border-bottom: 2px solid rgb(215,215,215);
     padding-top: 10px;
     padding-bottom: 10px;
+    margin-bottom: 10px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 600;
     display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+ }
+
+ .image-footer::after {
+    content:"";
+    position: relative;
+    right: 5px;
+    bottom: 30px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 10px 7.5px 0 7.5px;
+    border-color: rgb(202, 202, 202) transparent transparent transparent;
 }
 
-.image-number {
+
+ .image-number {
     color: rgb(202,202,202);
-    margin-right: auto;
-}
 
-.image-number:before {
+ }
+
+ .image-number:before {
     content: "#"
 }
 
-.image-caption {
+ .image-caption {
     color: rgb(120,120,120);
     display: flex;
-    align-items: flex-start;
-}
-.authors {
+    align-items: center;
     
 }
-
-
-a[href*="octodex"] > img[src*="octodex"] {
-    width:100%;
+.authors {
+    float: right;
 }
 
-.authors > li > a > img {
+
+ .octocat > a > img {
+    width:100%;
+    border: 2px solid rgb(215,215,215);
+}
+
+ .authors > li > a > img {
     width: 35px;
     border-radius: 3px;
 }
 
-ul {
+ ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
   }
 
-  a:link, a:visited {
+   a:link, a:visited {
     color: rgb(64,64,64);
     text-decoration: none;
   }
 
-/* this is for the triangle but I don't know where it goes:
-width: 0;
+  span {
+      margin: 0px 3px;
+  }
+
+ /* this is for the triangle but I don't know where it goes
+ width: 0;
 height: 0;
 border-style: solid;
 border-width: 10px 10px 0 10px;
-border-color: #cacaca transparent transparent transparent; *//
+border-color: #cacaca transparent transparent transparent;
 
-/* spacing between words in caption? */
+ */
